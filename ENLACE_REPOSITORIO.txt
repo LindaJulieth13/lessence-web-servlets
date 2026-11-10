@@ -1,0 +1,8 @@
+
+REPOSITORIO GITHUB - EVIDENCIA GA7-220501096-AA2-EV02
+
+Proyecto: L'ESSENCE - Gestión de perfumes
+Tecnología: Java, Servlets, JSP, HTML y MySQL.
+
+Enlace del repositorio:
+https://github.com/LindaJulieth13/lessence-web-servlets
