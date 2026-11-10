@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'ESSENCE | Gestión de perfumes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px 20px;
+            background: #191919;
+            border-bottom: 2px solid #c5a45b;
+        }
+
+        header h1 {
+            color: #c5a45b;
+            letter-spacing: 4px;
+        }
+
+        main {
+            max-width: 650px;
+            margin: 35px auto;
+            padding: 25px;
+        }
+
+        .panel {
+            background: #202020;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #555;
+            border-radius: 6px;
+        }
+
+        button, .consulta {
+            display: inline-block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background: #c5a45b;
+            color: #111;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        button:hover, .consulta:hover {
+            background: #e0c27a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>L'ESSENCE</h1>
+        <p>Gestión de inventario de perfumes</p>
+    </header>
+
+    <main>
+
+        <section class="panel">
+            <h2>Registrar nuevo perfume</h2>
+
+            <form action="perfumes" method="POST">
+
+                <label for="nombre">Nombre del perfume</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" name="marca" required>
+
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccionar categoría</option>
+                    <option value="Dama">Dama</option>
+                    <option value="Caballero">Caballero</option>
+                    <option value="Unisex">Unisex</option>
+                </select>
+
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio"
+                       min="0" step="0.01" required>
+
+                <label for="stock">Stock disponible</label>
+                <input type="number" id="stock" name="stock"
+                       min="0" step="1" required>
+
+                <button type="submit">Registrar perfume</button>
+
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Inventario</h2>
+            <p>Consulta los perfumes registrados en nuestra base de datos.</p>
+
+            <a class="consulta" href="perfumes">
+                Consultar inventario
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 L'ESSENCE - Fragancias que dejan huella
+    </footer>
+
+</body>
+</html>

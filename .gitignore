@@ -1,0 +1,15 @@
+
+# Archivos generados por Maven
+target/
+
+# Configuración personal del editor
+.vscode/
+.idea/
+
+# Archivos temporales
+*.log
+*.class
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
